@@ -1,9 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Avatar } from '@nextui-org/react';
+import ProfileWindow from './ProfileWindow';
 
 
 function NavBar() {
+
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
   
   function toggleMenu() {
     const navToggle = document.getElementsByClassName("toggle");
@@ -29,17 +36,14 @@ function NavBar() {
         <Link to="/"
             class="block md:inline-block px-3 py-3 md:border-none">Home
         </Link>
-        <Link to="/"
-            class="block md:inline-block px-3 py-3 md:border-none">Activity
-        </Link>
-        <Link to="/Treanding"
-            class="block md:inline-block px-3 py-3 md:border-none lg:hidden">Treanding
+        <Link onClick={openModal}
+            class="block md:inline-block px-3 py-3 md:border-none lg:hidden">Profile
         </Link>
         <a href="https://www.linkedin.com/in/tasneem-alluhimi-a45541215/" target='_blank'
             class="block md:inline-block px-3 py-3 md:border-none">About
         </a>
 
-        <div className='px-3 py-3'>
+        <div className='px-3 py-3 hidden lg:block'>
 
         <Dropdown placement="bottom-end">
           <DropdownTrigger>
@@ -72,6 +76,9 @@ function NavBar() {
         </div>
     </div>
 </nav>
+
+    <ProfileWindow isOpen={isModalOpen} openModal={openModal} />
+
     </>
   )
 }

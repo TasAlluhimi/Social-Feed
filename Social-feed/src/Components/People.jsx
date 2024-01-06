@@ -5,6 +5,7 @@ import { Button } from '@nextui-org/react';
 function People() {
   return (
     <div className='fixed w-[30vw]'>
+        <div className='bg-white shadow rounded-lg ml-2 p-1'>
     <div className='px-5 mt-5'>
         You Can Follow
     </div>
@@ -97,25 +98,36 @@ function People() {
                 </div>
             </div>
     </div>
+    </div>
 
-    <hr className=''/>
+        <div className='bg-white shadow rounded-lg ml-2 p-2 mt-6'>
 
         <div className='px-5 mt-5'>Treanding</div>
+            <div>
             <div className='px-5 mt-3 text-primary'>
                 #Explore_SAFF_Website! 
             </div>
+            <div className='text-xs px-5 mt-1 text-gray-500'>3.5k Posts</div>
+            </div>
+            <div>
             <div className='px-5 mt-3 text-primary'>
                 #New_SAFF_Website
             </div>
+            <div className='text-xs px-5 mt-1 text-gray-500'>5k Posts</div>
+            </div>
+            <div>
             <div className='px-5 mt-3 text-primary'>
                 #Tasneem_Alluhimi
             </div>
-            <div className='px-5 mt-3 text-primary'>
-                #Fake-posts
+            <div className='text-xs px-5 mt-1 text-gray-500'>50k Posts</div>
             </div>
+            <div>
             <div className='px-5 mt-3 text-primary'>
                 #Best_frontend_developers
             </div>
+            <div className='text-xs px-5 mt-1 text-gray-500'>895 Posts</div>
+            </div>
+    </div>
     </div>
   )
 }

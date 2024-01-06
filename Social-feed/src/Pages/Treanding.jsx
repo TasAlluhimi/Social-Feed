@@ -6,17 +6,11 @@ import NavBar from '../Components/NavBar';
 function Treanding() {
   return (
     <>
-    <div className=''>
-        <NavBar/>
-    </div>
+    
 
         <div className='px-5'>
-
-        <div className='text-white'>
-        You Can Follow
-        </div>
     </div>
-    <div className='mt-20 px-5'>
+    <div className='mt-2 px-5'>
     You Can Follow
     </div>
         <div className="flex flex-col gap-5 items-start p-5">
@@ -134,20 +128,29 @@ function Treanding() {
     <hr className=''/>
 
         <div className='px-5 mt-5'>Treanding</div>
+            <div>
             <div className='px-5 mt-3 text-primary'>
                 #Explore_SAFF_Website! 
             </div>
+            <div className='text-xs px-5 mt-1 text-gray-500'>3.5k Posts</div>
+            </div>
+            <div>
             <div className='px-5 mt-3 text-primary'>
                 #New_SAFF_Website
             </div>
+            <div className='text-xs px-5 mt-1 text-gray-500'>5k Posts</div>
+            </div>
+            <div>
             <div className='px-5 mt-3 text-primary'>
                 #Tasneem_Alluhimi
             </div>
-            <div className='px-5 mt-3 text-primary'>
-                #Fake-posts
+            <div className='text-xs px-5 mt-1 text-gray-500'>50k Posts</div>
             </div>
-            <div className='px-5 mt-3 text-primary mb-10'>
+            <div className='mb-3'>
+            <div className='px-5 mt-3 text-primary'>
                 #Best_frontend_developers
+            </div>
+            <div className='text-xs px-5 mt-1 text-gray-500'>895 Posts</div>
             </div>
     </>
   )
