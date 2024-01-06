@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownTrigger, Avatar } from '@nextui-org/react';
 import ProfileWindow from './ProfileWindow';
 
-
 function NavBar() {
 
   const [isModalOpen, setIsModalOpen] = React.useState(false);
@@ -23,7 +22,7 @@ function NavBar() {
     <>
         <nav class="flex flex-wrap items-center justify-between p-3 bg-white border-b-1 fixed z-[999] w-full">
     <div className='font-bold text-2xl'>
-      Social Feed
+      <Link to='/'>Social Feed</Link>
     </div>
     <div class="flex md:hidden">
         <button onClick={toggleMenu} id="hamburger">
